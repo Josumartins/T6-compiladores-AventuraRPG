@@ -242,13 +242,13 @@ O projeto inclui 4 arquivos de teste prontos:
 ```bash
 JAR=target/AventuraRPG-1.0-SNAPSHOT-jar-with-dependencies.jar
 
-echo "=== CAMPANHA SEM ERROS (deve iniciar o jogo) ==="
+echo "=== CAMPANHA SEM ERROS (Iniciando o jogo) ==="
 echo "" | java -jar $JAR AventuraRPG/testes/campanha_sem_erros.txt
 
 echo "=== CAMPANHA COM ERROS SEMANTICOS ==="
 java -jar $JAR AventuraRPG/testes/campanha_com_erros.txt
 
-echo "=== ERRO LEXICO ==="
+echo "=== ERROS LEXICO ==="
 java -jar $JAR AventuraRPG/testes/teste_lexico.txt
 
 echo "=== ERROS SINTATICOS ==="
