@@ -14,7 +14,7 @@ Este projeto foi desenvolvido para a disciplina de **Construção de Compiladore
 
 ---
 
-## 📋 Índice
+## Índice
 
 - [Sobre a Linguagem](#sobre-a-linguagem)
 - [Estrutura da Linguagem](#estrutura-da-linguagem)
