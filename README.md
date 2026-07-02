@@ -1,8 +1,16 @@
-# 🐉 AventuraRPG — Linguagem de Descrição de Campanhas de RPG
+#AventuraRPG — Linguagem de Descrição de Campanha de RPG
 
-> Uma linguagem de domínio específico (DSL) para descrever campanhas de RPG em português, com compilador que interpreta e executa aventuras interativas no terminal.
+> Uma linguagem de domínio específico (DSL) para descrever campanhas de RPG em português, com um compilador que interpreta e executa aventuras interativas no terminal.
 > 
-> Projeto desenvolvido para a disciplina de **Construção de Compiladores** (Trabalho 6) - Prof. Daniel Lucrédio.
+> Projeto desenvolvido para a disciplina de **Construção de Compiladores** (T6) - Professor Dr. **Daniel Lucrédio** no Departamento de Computação da **UFSCar — São Carlos**.
+
+## Autores
+
+* **Josué Martins da Conceição** — RA: 769613 (Turma B)
+* **Brenda Raquel Maia** — RA: 757891 (Turma A)
+
+---
+
 ## 📋 Índice
 
 - [Sobre a Linguagem](#sobre-a-linguagem)
@@ -19,11 +27,11 @@
 
 ## Sobre a Linguagem
 
-**AventuraRPG** é uma DSL que permite descrever campanhas de RPG de forma declarativa em português. No arquivo `.txt` escrito em AventuraRPG descreve personagens, itens, encontros e missões — e o compilador transforma isso em uma aventura interativa no terminal, com batalhas por turnos e escolhas do jogador.
+**AventuraRPG** é permite descrever campanhas de RPG de forma declarativa em português. No arquivo `.txt` escrito em AventuraRPG descreve personagens, itens, encontros e missões — e o compilador transforma isso em uma aventura interativa no terminal, com batalhas por turnos e escolhas do jogador.
 
 **Para que serve:**
 - Criar aventuras de RPG sem programar
-- Aprender conceitos de compiladores com um domínio lúdico
+- Aprender conceitos de compiladores
 - Gerar sessões de RPG solo
 
 ---
@@ -189,7 +197,6 @@ Após análise sem erros, o compilador **interpreta** o programa diretamente, ex
 
 - Java 25
 - Maven 3.8+
-
 ### Compilar
 
 ```bash
