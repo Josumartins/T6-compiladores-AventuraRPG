@@ -1,4 +1,4 @@
-#AventuraRPG — Linguagem de Descrição de Campanha de RPG
+##AventuraRPG — Linguagem de Descrição de Campanha de RPG
 
 > Uma linguagem de domínio específico (DSL) para descrever campanhas de RPG em português, com um compilador que interpreta e executa aventuras interativas no terminal.
 > 
