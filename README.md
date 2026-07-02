@@ -7,6 +7,30 @@
 ## Sobre o Projeto
 Este projeto foi desenvolvido para a disciplina de **Construção de Compiladores** (T6), ministrada pelo Professor Dr. **Daniel Lucrédio** no Departamento de Computação da **UFSCar — São Carlos**. O objetivo principal é demonstrar a compreensão prática da teoria de compiladores projetando e implementando uma linguagem do zero.
 
+## Estrutura do Projeto
+
+```
+T6-compiladores-AventuraRPG/
+├── testes/                          # Diretório contendo os casos de teste
+│   ├── campanha_sem_erros.txt       # Caso de teste: campanha válida
+│   ├── campanha_com_erros.txt       # Caso de teste: erros semânticos
+│   ├── teste_lexico.txt             # Caso de teste: erro léxico
+│   └── teste_sintatico.txt          # Caso de teste: erros sintáticos
+└── AventuraRPG/                     # Diretório principal do compilador
+    ├── pom.xml                      # Configuração Maven (ANTLR 4.12.0, Java 25)
+    └── src/main/
+        ├── antlr4/.../aventurarpg/
+        │   └── AventuraRPG.g4       # Gramática da linguagem
+        └── java/.../aventurarpg/
+            ├── Principal.java           
+            ├── TabelaDeSimbolos.java    
+            ├── Escopos.java             
+            ├── AventuraRPGSemanticoUtils.java 
+            ├── AventuraRPGSemantico.java        
+            └── AventuraRPGInterpretador.java
+```
+
+
 ## Autores
 
 * **Josué Martins da Conceição** — RA: 769613 (Turma B)
@@ -260,28 +284,6 @@ java -jar $JAR AventuraRPG/testes/teste_sintatico.txt
 
 ---
 
-## Estrutura do Projeto
-
-```
-T6-compiladores-AventuraRPG/
-├── testes/                          # Diretório contendo os casos de teste
-│   ├── campanha_sem_erros.txt       # Caso de teste: campanha válida
-│   ├── campanha_com_erros.txt       # Caso de teste: erros semânticos
-│   ├── teste_lexico.txt             # Caso de teste: erro léxico
-│   └── teste_sintatico.txt          # Caso de teste: erros sintáticos
-└── AventuraRPG/                     # Diretório principal do compilador
-    ├── pom.xml                      # Configuração Maven (ANTLR 4.12.0, Java 25)
-    └── src/main/
-        ├── antlr4/.../aventurarpg/
-        │   └── AventuraRPG.g4       # Gramática da linguagem
-        └── java/.../aventurarpg/
-            ├── Principal.java           
-            ├── TabelaDeSimbolos.java    
-            ├── Escopos.java             
-            ├── AventuraRPGSemanticoUtils.java 
-            ├── AventuraRPGSemantico.java        
-            └── AventuraRPGInterpretador.java
-```
 
 ### Fluxo de compilação
 
