@@ -179,7 +179,7 @@ public class AventuraRPGInterpretador extends AventuraRPGBaseVisitor<Void> {
     //  CRIACAO DE PERSONAGEM
 
     private void fichaDePersonagem() {
-        escrever(NEGRITO + "\n  ══ CRIACAO DE PERSONAGEM ══\n" + RESET);
+        escrever(NEGRITO + "\n  ══ SELEÇÃO DE PERSONAGEM ══\n" + RESET);
 
         if (personagens.isEmpty()) {
             escrever(VERMELHO + "  Nenhum personagem declarado no arquivo." + RESET);

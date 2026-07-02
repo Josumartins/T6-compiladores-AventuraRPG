@@ -1,11 +1,11 @@
 
-//campanha valida sem erros
+//campanha sem erros
 
-campanha "A Maldicao do Dragao Negro" {
+campanha "A Maldicao do Terror Negro" {
 
     // ── Personagens ───────────────────────────────
 
-    personagem Aragorn {
+    personagem Damon_targaryen {
         classe: guerreiro
         nivel: 5
         pv: 80
@@ -18,7 +18,7 @@ campanha "A Maldicao do Dragao Negro" {
         inventario { "Espada Longa", "Pocao de Cura" }
     }
 
-    personagem Gandalf {
+    personagem Viserys_Targaryen {
         classe: mago
         nivel: 6
         pv: 60
@@ -27,9 +27,10 @@ campanha "A Maldicao do Dragao Negro" {
             sabedoria: 16,
             carisma: 14
         }
+        inventario { "Amuleto das Sombras"}
     }
 
-    personagem Legolas {
+    personagem Jorah_Mormont {
         classe: patrulheiro
         nivel: 4
         pv: 70
@@ -94,7 +95,7 @@ campanha "A Maldicao do Dragao Negro" {
         }
     }
 
-    encontro "Dragao Negro Karvoth" {
+    encontro "Dragao Terror Negro" {
         inimigos { dragao_negro x1 }
         dificuldade: letal
         recompensa {
@@ -107,7 +108,7 @@ campanha "A Maldicao do Dragao Negro" {
 
     // ── Missoes ───────────────────────────────────
 
-    missao "Limpar o Caminho" {
+    missao "Entrando na Florestra Escura" {
         passos {
             entrar "Emboscada dos Goblins"
             coletar "Pocao de Cura"
@@ -120,7 +121,7 @@ campanha "A Maldicao do Dragao Negro" {
     }
 
     missao "O Guardiao Desperto" {
-        requer { "Limpar o Caminho" }
+        requer { "Entrando na Florestra Escura" }
         passos {
             falar_com Eldrin
             entrar "Guardiao das Ruinas"
@@ -137,7 +138,7 @@ campanha "A Maldicao do Dragao Negro" {
         requer { "O Guardiao Desperto" }
         passos {
             falar_com Sariel
-            entrar "Dragao Negro Karvoth"
+            entrar "Dragao Terror Negro"
             coletar "Chave do Calabouco"
             usar "Chave do Calabouco"
             retornar "Sala do Tesouro"
