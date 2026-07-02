@@ -30,7 +30,7 @@ Este projeto foi desenvolvido para a disciplina de **Construção de Compiladore
 
 ## Sobre a Linguagem
 
-**AventuraRPG** é permite descrever campanhas de RPG de forma declarativa em português. No arquivo `.txt` escrito em AventuraRPG descreve personagens, itens, encontros e missões — e o compilador transforma isso em uma aventura interativa no terminal, com batalhas por turnos e escolhas do jogador.
+**AventuraRPG** permite descrever campanhas de RPG de forma declarativa em português. No arquivo `.txt` escrito onde descreve personagens, itens, encontros e missões — e o compilador transforma isso em uma aventura interativa no terminal, com batalhas por turnos e escolhas do jogador.
 
 **Para que serve:**
 - Criar aventuras de RPG sem programar
