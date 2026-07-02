@@ -1,15 +1,16 @@
 #  AventuraRPG — Linguagem de Descrição de Campanha de RPG
 
 > Uma linguagem de domínio específico (DSL) para descrever campanhas de RPG em português, com um compilador que interpreta e executa aventuras interativas no terminal.
-> 
-> Projeto desenvolvido para a disciplina de **Construção de Compiladores** (T6) - Professor Dr. **Daniel Lucrédio** no Departamento de Computação da **UFSCar — São Carlos**.
 
 ---
+
+## Sobre o Projeto
+Este projeto foi desenvolvido para a disciplina de **Construção de Compiladores** (T6), ministrada pelo Professor Dr. **Daniel Lucrédio** no Departamento de Computação da **UFSCar — São Carlos**.O objetivo principal é demonstrar a compreensão prática da teoria de compiladores projetando e implementando uma linguagem do zero.
 
 ## Autores
 
 * **Josué Martins da Conceição** — RA: 769613 (Turma B)
-* **Brenda Raquel Maia** — RA: 757891 (Turma A 
+* **Brenda Raquel Maia** — RA: 757891 (Turma A)
 
 ---
 
