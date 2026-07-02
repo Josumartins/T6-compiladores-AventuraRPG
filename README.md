@@ -4,6 +4,8 @@
 > 
 > Projeto desenvolvido para a disciplina de **Construção de Compiladores** (T6) - Professor Dr. **Daniel Lucrédio** no Departamento de Computação da **UFSCar — São Carlos**.
 
+---
+
 ## Autores
 
 * **Josué Martins da Conceição** — RA: 769613 (Turma B)
