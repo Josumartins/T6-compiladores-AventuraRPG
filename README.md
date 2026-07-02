@@ -48,7 +48,6 @@ T6-compiladores-AventuraRPG/
 - [Como Compilar o Compilador](#como-compilar-o-compilador)
 - [Como Usar](#como-usar)
 - [Casos de Teste](#casos-de-teste)
-- [Estrutura do Projeto](#estrutura-do-projeto)
 
 ---
 
