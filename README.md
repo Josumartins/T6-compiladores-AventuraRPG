@@ -5,7 +5,7 @@
 ---
 
 ## Sobre o Projeto
-Este projeto foi desenvolvido para a disciplina de **Construção de Compiladores** (T6), ministrada pelo Professor Dr. **Daniel Lucrédio** no Departamento de Computação da **UFSCar — São Carlos**.O objetivo principal é demonstrar a compreensão prática da teoria de compiladores projetando e implementando uma linguagem do zero.
+Este projeto foi desenvolvido para a disciplina de **Construção de Compiladores** (T6), ministrada pelo Professor Dr. **Daniel Lucrédio** no Departamento de Computação da **UFSCar — São Carlos**. O objetivo principal é demonstrar a compreensão prática da teoria de compiladores projetando e implementando uma linguagem do zero.
 
 ## Autores
 
