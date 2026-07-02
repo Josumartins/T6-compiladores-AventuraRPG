@@ -1,0 +1,59 @@
+//campanha com erros propositais
+
+campanha "Campanha dos Erros" {
+
+    personagem Aragorn {
+        classe: guerreiro
+        nivel: 3
+        // ERRO 1 (semantico): pv=200 mas nivel 3 permite no maximo 60 (3 x 20)
+        pv: 200
+        atributos {
+            forca: 14,
+            destreza: 10
+        }
+        // ERRO 2 (semantico): "Espada Magica" nao foi declarada como item
+        inventario { "Espada Longa", "Espada Magica" }
+    }
+
+    // ERRO 3 (semantico): nome "Aragorn" ja foi declarado acima
+    personagem Aragorn {
+        classe: ladrao
+        nivel: 2
+        pv: 30
+    }
+
+    item "Espada Longa" {
+        tipo: arma
+        efeito: danificar(8)
+        valor: 50
+    }
+
+    item "Pocao de Cura" {
+        tipo: consumivel
+        efeito: curar(20)
+        valor: 10
+    }
+
+    encontro "Covil do Goblin" {
+        inimigos { goblin x3 }
+        dificuldade: medio
+        recompensa {
+            // ERRO 4 (semantico): "Amuleto Raro" nao foi declarado como item
+            "Amuleto Raro",
+            ouro: 50,
+            xp: 200
+        }
+    }
+
+    missao "Missao Principal" {
+        passos {
+            // ERRO 5 (semantico): "Sala Secreta" nao foi declarada como encontro
+            entrar "Sala Secreta"
+            coletar "Pocao de Cura"
+        }
+        recompensa {
+            ouro: 100,
+            xp: 300
+        }
+    }
+}

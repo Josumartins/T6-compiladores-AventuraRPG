@@ -1,0 +1,151 @@
+
+//campanha valida sem erros
+
+campanha "A Maldicao do Dragao Negro" {
+
+    // ── Personagens ───────────────────────────────
+
+    personagem Aragorn {
+        classe: guerreiro
+        nivel: 5
+        pv: 80
+        atributos {
+            forca: 16,
+            destreza: 12,
+            constituicao: 14,
+            sabedoria: 10
+        }
+        inventario { "Espada Longa", "Pocao de Cura" }
+    }
+
+    personagem Gandalf {
+        classe: mago
+        nivel: 6
+        pv: 60
+        atributos {
+            inteligencia: 18,
+            sabedoria: 16,
+            carisma: 14
+        }
+    }
+
+    personagem Legolas {
+        classe: patrulheiro
+        nivel: 4
+        pv: 70
+        atributos {
+            destreza: 18,
+            forca: 12,
+            sabedoria: 13
+        }
+    }
+
+    // ── Itens ─────────────────────────────────────
+
+    item "Espada Longa" {
+        tipo: arma
+        efeito: danificar(8)
+        valor: 50
+    }
+
+    item "Pocao de Cura" {
+        tipo: consumivel
+        efeito: curar(20)
+        valor: 10
+    }
+
+    item "Amuleto das Sombras" {
+        tipo: armadura
+        efeito: fortalecer(constituicao, 4)
+        valor: 120
+    }
+
+    item "Chave do Calabouco" {
+        tipo: item_chave
+        efeito: desbloquear("Sala do Tesouro")
+        valor: 0
+    }
+
+    item "Tomo Arcano" {
+        tipo: misc
+        efeito: fortalecer(inteligencia, 2)
+        valor: 80
+    }
+
+    // ── Encontros ─────────────────────────────────
+
+    encontro "Emboscada dos Goblins" {
+        inimigos { goblin x4, goblin_arqueiro x2 }
+        dificuldade: facil
+        recompensa {
+            "Pocao de Cura",
+            ouro: 20,
+            xp: 100
+        }
+    }
+
+    encontro "Guardiao das Ruinas" {
+        inimigos { troll x1, orc_capanga x3 }
+        dificuldade: dificil
+        recompensa {
+            "Amuleto das Sombras",
+            ouro: 80,
+            xp: 400
+        }
+    }
+
+    encontro "Dragao Negro Karvoth" {
+        inimigos { dragao_negro x1 }
+        dificuldade: letal
+        recompensa {
+            "Tomo Arcano",
+            "Chave do Calabouco",
+            ouro: 500,
+            xp: 1000
+        }
+    }
+
+    // ── Missoes ───────────────────────────────────
+
+    missao "Limpar o Caminho" {
+        passos {
+            entrar "Emboscada dos Goblins"
+            coletar "Pocao de Cura"
+            retornar "Vila de Edoras"
+        }
+        recompensa {
+            ouro: 50,
+            xp: 150
+        }
+    }
+
+    missao "O Guardiao Desperto" {
+        requer { "Limpar o Caminho" }
+        passos {
+            falar_com Eldrin
+            entrar "Guardiao das Ruinas"
+            coletar "Amuleto das Sombras"
+            retornar "Fortaleza de Pedra"
+        }
+        recompensa {
+            ouro: 150,
+            xp: 500
+        }
+    }
+
+    missao "A Batalha Final" {
+        requer { "O Guardiao Desperto" }
+        passos {
+            falar_com Sariel
+            entrar "Dragao Negro Karvoth"
+            coletar "Chave do Calabouco"
+            usar "Chave do Calabouco"
+            retornar "Sala do Tesouro"
+        }
+        recompensa {
+            "Tomo Arcano",
+            ouro: 1000,
+            xp: 2000
+        }
+    }
+}

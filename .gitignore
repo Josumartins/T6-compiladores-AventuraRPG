@@ -1,0 +1,55 @@
+# =========================
+# Arquivos gerados pelo Maven
+# =========================
+target/
+pom.xml.tag
+pom.xml.releaseBackup
+pom.xml.versionsBackup
+pom.xml.next
+release.properties
+dependency-reduced-pom.xml
+buildNumber.properties
+.mvn/timing.properties
+.mvn/wrapper/maven-wrapper.jar
+
+# =========================
+# Arquivos compilados Java
+# =========================
+*.class
+*.log
+*.jar
+*.war
+*.ear
+*.zip
+*.tar.gz
+*.rar
+
+# =========================
+# Arquivos do ANTLR 4
+# =========================
+# (Caso sua IDE gere esses arquivos fora da pasta target)
+*.tokens
+*.interp
+
+# =========================
+# Configurações de IDEs
+# =========================
+# IntelliJ IDEA
+.idea/
+*.iml
+*.iws
+
+# Eclipse
+.project
+.classpath
+.settings/
+.metadata/
+
+# VS Code
+.vscode/
+
+# =========================
+# Sistema Operacional
+# =========================
+.DS_Store
+Thumbs.db

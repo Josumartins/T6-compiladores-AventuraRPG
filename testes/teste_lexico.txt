@@ -1,0 +1,15 @@
+// =====================================================
+//  teste_lexico.txt
+//  Testa tokens invalidos / erros lexicos
+//  Esperado: erros na linha indicada
+// =====================================================
+
+campanha "Teste Lexico" {
+
+    // ERRO LEXICO: caractere '@' nao pertence ao alfabeto da linguagem
+    personagem Her@i {
+        classe: guerreiro
+        nivel: 1
+        pv: 10
+    }
+}

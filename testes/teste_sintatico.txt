@@ -1,0 +1,28 @@
+// =====================================================
+//  teste_sintatico.txt
+//  Testa violacoes de regras sintaticas
+//  Esperado: erros de sintaxe nas linhas indicadas
+// =====================================================
+
+campanha "Teste Sintatico" {
+
+    // ERRO SINTATICO: falta o nome do personagem (ID esperado apos 'personagem')
+    personagem {
+        classe: guerreiro
+        nivel: 1
+        pv: 10
+    }
+
+    item "Espada" {
+        tipo: arma
+        // ERRO SINTATICO: 'danificar' exige parenteses e argumento inteiro
+        efeito: danificar
+        valor: 10
+    }
+
+    encontro "Batalha" {
+        inimigos { goblin x2 }
+        // ERRO SINTATICO: nivel de dificuldade invalido
+        dificuldade: impossivel
+    }
+}
