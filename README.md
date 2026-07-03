@@ -263,43 +263,5 @@ O projeto inclui 4 arquivos de teste prontos:
 | `teste_lexico.txt` | Erro léxico: caractere `@` inválido em identificador | Erro léxico na linha indicada |
 | `teste_sintatico.txt` | Erros sintáticos: falta de ID, efeito sem argumentos, dificuldade inválida | Erros sintáticos nas linhas indicadas |
 
-### Executar todos os testes
-
-```bash
-JAR=target/AventuraRPG-1.0-SNAPSHOT-jar-with-dependencies.jar
-
-echo "=== CAMPANHA SEM ERROS (Iniciando o jogo) ==="
-echo "" | java -jar $JAR AventuraRPG/testes/campanha_sem_erros.txt
-
-echo "=== CAMPANHA COM ERROS SEMANTICOS ==="
-java -jar $JAR AventuraRPG/testes/campanha_com_erros.txt
-
-echo "=== ERROS LEXICO ==="
-java -jar $JAR AventuraRPG/testes/teste_lexico.txt
-
-echo "=== ERROS SINTATICOS ==="
-java -jar $JAR AventuraRPG/testes/teste_sintatico.txt
-```
-
----
-
-
-### Fluxo de compilação
-
-```
-arquivo.txt
-    │
-    ▼
-AventuraRPGLexer        ← gerado pelo ANTLR a partir de AventuraRPG.g4
-    │  tokens
-    ▼
-AventuraRPGParser       ← gerado pelo ANTLR a partir de AventuraRPG.g4
-    │  árvore sintática (AST)
-    ▼
-AventuraRPGSemantico    ← 2 passagens: registra nomes + verifica regras
-    │  AST validada
-    ▼
-AventuraRPGInterpretador  ← percorre a AST e executa a aventura no terminal
-```
 
 ---
